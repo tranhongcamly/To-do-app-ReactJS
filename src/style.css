@@ -1,0 +1,25 @@
+
+.container{
+    width: 500px;
+    height: auto;
+    margin: 90px auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px 15px 20px 15px;
+}
+
+.todolist{
+    text-align: left;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+}
