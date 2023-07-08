@@ -1,23 +1,33 @@
+import './App.css';
 
-// Todo App - ReactJS
-//1. add new task
-//2.update task
-//3.remove task
-//4.finish task
+import { Divider, Typography } from 'antd';
 
+import Filters from './components/Filters';
+import TodoList from './components/TodoList';
 
-//hooks: useState, usEffect, useRef
-
-import React from 'react'
-import "./style.css"
-import TodoApp from './TodoApp'
+const { Title } = Typography;
 
 function App() {
   return (
-    <div>
-      <TodoApp />
+    <div
+      style={{
+        width: 500,
+        margin: '15px auto',
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: 'white',
+        padding: '20px',
+        boxShadow: '0 0 10px 4px #bfbfbf',
+        borderRadius: 5,
+        height: '90vh',
+      }}
+    >
+      <Title style={{ textAlign: 'center' }}>TODO APP</Title>
+      <Filters />
+      <Divider />
+      <TodoList />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
